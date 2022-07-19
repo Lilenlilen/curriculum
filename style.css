@@ -4,35 +4,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
-
+/* HEADER */
 header {
   color: #2b4257;
-  font-family: "Noto Sans", sans-serif;
   padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 header h1 {
   font-weight: 400;
+  max-width: 60%;
   /* color: #6da7cc;
   background-color: #345e7d;
   gris: #7c8186; */
 }
 
-header h2,
-header p {
-  font-weight: 300;
-}
-
 header div {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
-  margin: 10px;
   position: relative;
   border: 3px solid #345e7d;
   border-radius: 50%;
@@ -42,3 +37,117 @@ header div img {
   width: 100%;
   height: 110%;
 }
+
+header h2,
+header p {
+  font-weight: 300;
+  max-width: 100%;
+}
+
+header p {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #6da7cc;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main > section {
+  padding: 1rem;
+  margin: 0 auto;
+  min-width: 80%;
+  color: #2b4257;
+}
+
+main > section h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+#contacto a {
+  display: block;
+  width: 100%;
+}
+
+main section:nth-child(2) ul {
+  list-style: none;
+}
+
+/* main section:nth-child(4) {
+  background-color: pink;
+} */
+
+main section:nth-child(4) ul {
+  gap: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+main section:nth-child(4) ul li {
+  background-color: #345e7d;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 10px;
+}
+
+.laboral > ul {
+  list-style: none;
+}
+
+.laboral ul h4 {
+  background-color: #6da7cc;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+}
+
+.laboral ul ul {
+  padding: 0.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.laboral > ul > li > ul {
+  font-weight: 300;
+  list-style: disc;
+}
+
+h5 + ul li {
+  list-style: circle;
+}
+
+main section:last-child ul {
+  gap: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+main section:last-child ul li {
+  background-color: #6da7cc;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 10px;
+}
+
+/*FOOTER*/
+footer {
+  text-align: center;
+  color: #7c8186;
+}
+
+/*media query 600 px*/
