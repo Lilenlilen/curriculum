@@ -28,9 +28,11 @@ header div {
   width: 100px;
   height: 100px;
   overflow: hidden;
-  position: relative;
   border: 3px solid #345e7d;
   border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 header div img {
   object-fit: cover;
@@ -42,10 +44,11 @@ header h2,
 header p {
   font-weight: 300;
   max-width: 100%;
+  padding: 1rem 0;
 }
 
 header p {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   border-bottom: 3px solid #6da7cc;
 }
 
@@ -58,7 +61,6 @@ main {
 }
 
 main > section {
-  padding: 1rem;
   margin: 0 auto;
   min-width: 80%;
   color: #2b4257;
@@ -77,10 +79,6 @@ main > section h2 {
 main section:nth-child(2) ul {
   list-style: none;
 }
-
-/* main section:nth-child(4) {
-  background-color: pink;
-} */
 
 main section:nth-child(4) ul {
   gap: 0.5rem 0;
@@ -108,7 +106,9 @@ main section:nth-child(4) ul li {
   color: white;
   padding: 0.5rem;
 }
-
+.laboral h4 + p {
+  padding-left: 2rem;
+}
 .laboral ul ul {
   padding: 0.5rem;
   max-width: 90%;
@@ -148,6 +148,25 @@ main section:last-child ul li {
 footer {
   text-align: center;
   color: #7c8186;
+  padding-top: 2rem;
 }
 
-/*media query 600 px*/
+@media (min-width: 570px) {
+  header {
+    padding: 2rem;
+    display: block;
+    gap: 1 rem;
+  }
+
+  header div {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  header h1,
+  header h2,
+  header p {
+    padding: 0.5rem;
+  }
+}
