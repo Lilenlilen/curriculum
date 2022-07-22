@@ -19,9 +19,6 @@ header {
 header h1 {
   font-weight: 400;
   max-width: 60%;
-  /* color: #6da7cc;
-  background-color: #345e7d;
-  gris: #7c8186; */
 }
 
 header div {
@@ -70,32 +67,13 @@ main > section h2 {
   text-align: center;
   padding: 1rem;
 }
-
+/*CONTACTO*/
 #contacto a {
   display: block;
   width: 100%;
 }
 
-main section:nth-child(2) ul {
-  list-style: none;
-}
-
-main section:nth-child(4) ul {
-  gap: 0.5rem 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-evenly;
-}
-
-main section:nth-child(4) ul li {
-  background-color: #345e7d;
-  color: white;
-  padding: 6px 15px;
-  border-radius: 10px;
-}
-
+/*EXPERIENCIA LABORAL*/
 .laboral > ul {
   list-style: none;
 }
@@ -128,6 +106,28 @@ h5 + ul li {
   list-style: circle;
 }
 
+/*EDUCACION*/
+main section:nth-child(3) ul {
+  list-style: none;
+}
+/*COMPETENCIAS*/
+main section:nth-child(5) ul {
+  gap: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+main section:nth-child(5) ul li {
+  background-color: #345e7d;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 10px;
+}
+
+/*OTRAS APTITUDES*/
 main section:last-child ul {
   gap: 0.5rem 0;
   display: flex;
@@ -151,9 +151,9 @@ footer {
   padding-top: 2rem;
 }
 
-@media (min-width: 570px) {
+@media (min-width: 576px) {
   header {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     display: block;
     gap: 1 rem;
   }
@@ -165,8 +165,25 @@ footer {
   }
 
   header h1,
-  header h2,
-  header p {
+  header h2 {
     padding: 0.5rem;
+  }
+
+  main {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  main section {
+    padding-bottom: 2rem;
+  }
+
+  .laboral {
+    grid-column: 2;
+    grid-row: 1 / 7;
+    padding-left: 2rem;
+    border-left: 3px solid #6da7cc;
   }
 }
