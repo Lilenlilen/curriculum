@@ -68,11 +68,45 @@ main > section h2 {
   padding: 1rem;
 }
 /*CONTACTO*/
-#contacto a {
-  display: block;
-  width: 100%;
+#contacto ul {
+  list-style-type: none;
 }
 
+#contacto ul li {
+  padding-bottom: 0.3rem;
+  padding-left: 2rem;
+  background-position: 0 0;
+  background-size: 1.4rem 1.4rem;
+  background-repeat: no-repeat;
+}
+
+#contacto ul li:nth-child(1) {
+  background-image: url("./images/linkedin.png");
+}
+
+#contacto ul li:nth-child(2) {
+  background-image: url("./images/github.png");
+}
+
+#contacto ul li:nth-child(3) {
+  background-image: url("./images/mail.png");
+}
+
+#contacto ul li:nth-child(4) {
+  background-image: url("./images/ubicacion.png");
+}
+
+#contacto a:link {
+  color: #2b4257;
+}
+
+#contacto a:visited {
+  color: #6da7cc;
+}
+
+#contacto a:hover {
+  color: #7c8186;
+}
 /*EXPERIENCIA LABORAL*/
 .laboral > ul {
   list-style: none;
